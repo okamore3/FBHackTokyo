@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+/* normalize
+------------------------------------------------*/
+body,div,
+dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,
+p,blockquote,
+th,td {
+    margin: 0;
+    padding: 0;
+}
+th,td,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,
+address {
+    font-size: 100%;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6,
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+ol,ul,li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th,td {
+    vertical-align: top;
+    text-align: left;
+}
+img,
+a img {
+    border: 0;
+}
+input {
+    line-height: 1.2;
+}
+
+
+/* 
+------------------------------------------------*/
+
+body { 
+    margin: 0 auto;
+    padding: 0;
+/*  overflow: hidden;*/
+    font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    width:520px;
+}
+
+body#fan{
+    background:url(../images/bgimage.gif) center top repeat-y;
+}
+
+body#diagnosis{
+    background:url(../images/bg_meimeisho.jpg) center top no-repeat;
+    height: 520px;
+}
+
+img {
+    border: none;
+}
+
+a:link, a:visited {color:#000;}
+a:hover {
+    color:red;
+}
+
+a:hover img {
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+}
+
+
+/* share
+------------------------------------------------*/
+
+ul.share_line {
+    margin: 0 0 0 5px;
+    padding: 0;
+    display: inline;
+}
+
+ul.share_line img {
+    vertical-align: middle;
+    display: inline;
+}
+
+ul.share_line li {
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+    display: inline;
+}
+
+#share {
+    width: 520px;
+    margin: 0 0 10px 0;
+    padding: 10px 0 0 0;
+}
+
+
+/* 
+------------------------------------------------*/
+
+h1 {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+p {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+
+/* formページ関連
+------------------------------------------------*/
+
+#form h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#form span{
+    font-size:80%;
+    color:#505050;
+}
+
+#form dl{
+    width:520px;
+    margin-bottom:30px;
+}
+
+#form dl dt{
+    margin-bottom:10px;
+    font-weight:bold;
+    text-indent:10px;
+}
+
+#form dl dd{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+
+#form form h3{
+    background-color:#990000;
+    margin-bottom:10px;
+    padding:2px;
+    text-align:center;
+    font-weight:bold;
+    color:#fff;
+    text-shadow: 0px -1px 1px #000,
+                 0px 1px 1px #80b3e6;
+}
+
+#form input[type="text"],
+#form textarea {
+    width: 420px;
+    height: 1em;
+    padding:10px;
+    letter-spacing:0.5em;
+    border:2px solid #8c8c8c;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#form input[type="text"]:focus,
+#form textarea:focus,
+#form input[type="text"]:hover,
+#form textarea:hover {
+    border:2px solid #da3232;
+}
+
+#form select {
+    width: 440px;
+    padding:5px 0px 5px 10px;
+    letter-spacing:0.5em;
+    border:2px solid #8c8c8c;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/* 診断結果 diagnosis result
+------------------------------------------------*/
+
+#result{
+    margin-top:170px;
+}
+
+#result p#birth{
+    margin:0 0 20px;
+    font-size:24px;
+    font-weight:bold;
+    line-height:24px;
+    letter-spacing:0.3em;
+    font-family: "ＭＳ Ｐ明朝", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "平成明朝",serif;
+    text-shadow:0 0 1px #bbb, 0 0 1px #bbb, 0 0 1px #bbb, 0 0 1px #bbb;
+}
+
+#result p#namaeIMG{
+    margin-bottom:10px;
+    padding:0;
+}
+
+#result p.text{
+    padding:0 30px;
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+}
+#result p.text span{
+    font-size:16px;
+}
+
+
+#comment{
+    width:460px;
+    margin:40px auto 0;
+}
+
+#profimg{
+    width:100px;
+    height:100px;
+    margin:0 10px 0 0;
+    float:left;
+}
+
+
+#fukidashi{
+    width:350px;
+    height:108px;
+    margin:-5px 0 0;
+    font-size:14px;
+    color:#000;
+    line-height:1.8em;
+    float:left;
+    background:url(../images/fukidashi.png) no-repeat;
+}
+
+
+
+/*吹き出し部分*/
+.fukidashi-border {
+    margin-top:15px;
+    margin-left:40px;
+    width:280px;
+    text-align:left;
+}
+
+
+
+
+
+#profimg{
+    box-shadow: 1px 1px 3px #666;
+    -moz-box-shadow: 1px 1px 3px #666;
+    -webkit-box-shadow: 1px 1px 3px #666;
+}
+
+
+/* clearfix
+------------------------------------------------*/
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-table;
+    min-height: 1%;
+}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+
+/* error */
+p.error {
+	color:red;
+}
